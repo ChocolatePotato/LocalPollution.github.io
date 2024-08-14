@@ -1,0 +1,193 @@
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #FFFFFF;
+    --color1: #0B1D51;
+    --color2: #910000;
+    --color3: #A1869E;
+    --color4: #910000;
+    --color5: #D1C6AD;
+}
+
+body {
+    background-color: #000000; 
+}
+
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inter;
+    color: var(--black-font);
+}
+
+.banner {
+    padding: 1em;
+    background-color: var(--color2);
+    color: var(--white-font);
+}
+
+.banner-title {
+    font-size: 3em;
+}
+
+.banner-subtitle {
+    font-size: 2.25em;
+}
+
+.essay-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Visual-Essay-Image {
+    width: 100%;
+}
+
+.Visual-EssayText {
+    padding: 1em;
+    background-color: var(--color4);
+    color: var(--black-font);
+}
+
+.our-clients-title {
+    background-color: var(--color5);
+    text-align: center;
+    font-size: 48px;
+}
+
+#banner {
+    grid-area: ban;
+}
+
+#essay-card1 {
+    grid-area: ec1;
+}
+
+#essay-card2 {
+    grid-area: ec2;
+}
+
+#essay-card3 {
+    grid-area: ec3;
+}
+
+#essay-card4 {
+    grid-area: ec4;
+}
+
+#essay-card5 {
+    grid-area: ec5;
+}
+
+#essay-card6 {
+    grid-area: ec6;
+}
+
+#essay-card7 {
+    grid-area: ec7;
+}
+
+#essay-card9 {
+    grid-area: ec9;
+}
+
+#essay-card10 {
+    grid-area: ec10;
+}
+
+#essay-card11 {
+    grid-area: ec11;
+}
+
+#essay-card12 {
+    grid-area: ec12;
+}
+
+#essay-card13 {
+    grid-area: ec13;
+}
+
+#references {
+    grid-area: ref;
+}
+
+.main-container {
+    display: grid;
+    column-gap: 4em;
+}
+
+.main-container {
+    grid-template:
+          "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+          "ec1 ec1 ec1 ec1 ec1 ec1 ec1 ec1 ec1 ec1 ec1 ec1" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec2 ec2 ec2 ec2 ec2 ec2 ec2 ec2 ec2 ec2 ec2 ec2" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec3 ec3 ec3 ec3 ec3 ec3 ec3 ec3 ec3 ec3 ec3 ec3" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec4 ec4 ec4 ec4 ec4 ec4 ec4 ec4 ec4 ec4 ec4 ec4" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec5 ec5 ec5 ec5 ec5 ec5 ec5 ec5 ec5 ec5 ec5 ec5" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec6 ec6 ec6 ec6 ec6 ec6 ec6 ec6 ec6 ec6 ec6 ec6" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec7 ec7 ec7 ec7 ec7 ec7 ec7 ec7 ec7 ec7 ec7 ec7" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec9 ec9 ec9 ec9 ec9 ec9 ec9 ec9 ec9 ec9 ec9 ec9" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec10 ec10 ec10 ec10 ec10 ec10 ec10 ec10 ec10 ec10 ec10 ec10" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec11 ec11 ec11 ec11 ec11 ec11 ec11 ec11 ec11 ec11 ec11 ec11" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec12 ec12 ec12 ec12 ec12 ec12 ec12 ec12 ec12 ec12 ec12 ec12" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ec13 ec13 ec13 ec13 ec13 ec13 ec13 ec13 ec13 ec13 ec13 ec13" minmax(32em, auto)
+          " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+          "ref ref ref ref ref ref ref ref ref ref ref ref" minmax(8em, auto);
+}
+/* Media queries for responsiveness */
+.main-container {
+    max-width: 100%;
+    width: calc(100% - 2em); /* Adjust width to account for padding */
+    padding: 0 1em; /* Add padding to ensure content doesn't touch the edges */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        column-gap: 2em;
+    }
+
+    .banner-title {
+        font-size: 2em;
+    }
+
+    .banner-subtitle {
+        font-size: 1.5em;
+    }
+
+    .our-clients-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        column-gap: 1em;
+    }
+
+    .banner-title {
+        font-size: 1.5em;
+    }
+
+    .banner-subtitle {
+        font-size: 1.25em;
+    }
+
+    .our-clients-title {
+        font-size: 1.25em;
+    }
+}
